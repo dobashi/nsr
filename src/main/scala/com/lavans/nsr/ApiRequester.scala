@@ -34,6 +34,7 @@ object ApiRequester {
   def get(jan: String): String = {
     val uri = url + s"jan=$jan"
     log.info(uri)
+    Thread.sleep(500)
     Source.fromURL(uri).mkString
   }
 }
