@@ -1,0 +1,5 @@
+{
+  applicationId:YOUR_APPLICATION_ID
+}
+
+// https://webservice.rakuten.co.jp/explorer/proxy?url=https%3A%2F%2Fapp.rakuten.coi.jp%2Fservices%2Fapi%2FBooksCD%2FSearch%2F20170404%3Fformat%3Djson%26artistName%3D%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25BC%26booksGenreId%3D002%26applicationId%3Dedc9e15a8ab47d71eb97eb8ad469878e&developerId=edc9e15a8ab47d71eb97eb8ad469878e
