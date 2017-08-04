@@ -1,11 +1,6 @@
 package com.lavans.nsr
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.scala.DefaultScalaModule
 import com.typesafe.config.ConfigFactory
-import org.json4s.DefaultFormats
-import org.json4s.native.JsonParser
 
 import scala.io.Source
 
@@ -34,7 +29,7 @@ object ApiRequester {
   def get(jan: String): String = {
     val uri = url + s"jan=$jan"
     log.info(uri)
-    Thread.sleep(500)
+    Thread.sleep(1000)
     Source.fromURL(uri).mkString
   }
 }
