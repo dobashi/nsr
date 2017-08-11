@@ -17,7 +17,7 @@ object Main {
       using(new PrintWriter(outputFile)) { out =>
         in.mkString.split("\n")
           .map(ApiRequest.get)
-          .flatMap(ApiResponse.parse(_).firstItem)
+          .map(ApiResponse.parse(_).firstItem)
           .map(_.toDataString)
           .map(out.println)
       }
